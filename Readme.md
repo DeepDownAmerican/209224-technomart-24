@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Egor Vidrin](https://up.htmlacademy.ru/htmlcss/24/user/209224).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://up.htmlacademy.ru/htmlcss/24/user/191422).
 
 ---
 
