@@ -26,7 +26,7 @@
       </address>
       <ul class="user-menu">
         <li class="user-panel"><a href="#">Равшан Джамшутович</a></li>
-        <li><a href="#"><img src="" class="icon-exit" alt="Выйти из профиля">Выход</a></li>
+        <li><a href="#"><img src="#" class="icon-exit" alt="Выйти из профиля">Выход</a></li>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
@@ -54,24 +54,30 @@
     <h1>Перфораторы</h1>
     <section class="filters">
       <h2>Фильтр:</h2>
-      <h3>Производители:</h3>
-      <ul class="filter">
-        <li>Bosch</li>
-        <li>Интерскол</li>
-        <li>Makita</li>
-        <li>Dewalt</li>
-        <li>Hitachi</li>
-      </ul>
-      <h3>Питание:</h3>
-      <ul class="filter">
-        <li>Аккумуляторные</li>
-        <li>Сетевые</li>
-      </ul>
-      <button type="button">Показать</button>
+      <form method="get" action="#">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul class="filter">
+            <li><label><input type="checkbox" class="visually-hidden filter-checkbox" name="bosch" checked>Bosch</label></li>
+            <li><label><input type="checkbox" class="visually-hidden filter-checkbox" name="interskol">Интерскол</label></li>
+            <li><label><input type="checkbox" class="visually-hidden filter-checkbox" name="makita" checked>Makita</label></li>
+            <li><label><input type="checkbox" class="visually-hidden filter-checkbox" name="dewalt">Dewalt</label></li>
+            <li><label><input type="checkbox" class="visually-hidden filter-checkbox" name="hitachi">Hitachi</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul class="filter">
+            <li><label><input type="radio" name="supply" class="visually-hidden filter-radio" checked>Аккумуляторные</label></li>
+            <li><label><input type="radio" name="supply" class="visually-hidden filter-radio">Сетевые</label></li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="btn filter-btn">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
-      <h2 class="hidden">Список товров</h2>
+      <h2 class="visually-hidden">Список товров</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <div class="hidden-menu">
@@ -198,6 +204,14 @@
       <p class="footer-copyright">Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </div>
   </footer>
+
+  <section class="visually-hidden add-cart-popup">
+    <button type="button" class="btn btn-close">Закрыть</button>
+    <h2><img src="#" class="added-icon" alt="иконка, что товар добавлен">Товар добавлен в корзину!</h2>
+    <a href="#" class="btn btn-follow-cart">Оформить заказ</a>
+    <button type="button" class="btn btn-continue">Продолжить покупки</button>
+  </section>
+
   <script src="js/script.js"></script>
 </body>
 

@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a class="header-logo">Техномарт</a>
+      <a class="header-logo" aria-label="логотип магазина техномарт">Техномарт</a>
       <form method="GET">
         <p><label for="search">Поиск:</label><input type="search" id="search"></p>
       </form>
@@ -19,15 +19,15 @@
       <a href="#" class="btn btn-order">Оформить заказ</a>
     </div>
     <div class="header-bottom">
-      <h1 class="hidden">Техномарт - магазин строительных материалов</h1>
+      <h1 class="visually-hidden">Техномарт - магазин строительных материалов</h1>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <address>
         <a href="#" class="phone">+7 (812) 555-05-55</a>
         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
       <ul class="user">
-        <li class="login signin-link">Войти</li>
-        <li class="login signup-link">Регистрация</li>
+        <li class="login signin-link"><a href="#">Войти</a></li>
+        <li class="login signup-link"><a href="#">Регистрация</a></li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -62,7 +62,7 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами,
         заехав в наш офис:</p>
-      <a href="#"><img src="img/map.jpg" alt="Местоположение нашего офиса на карте"></a>
+      <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
       <a href="#" class="btn btn-letter">Заблудились? Напишите нам!</a>
     </section>
   </main>
@@ -93,14 +93,29 @@
     <div class="footer-bottom">
       <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul class="footer-social">
-        <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-        <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-        <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+        <li><a class="social-btn social-btn-vk" href="#" aria-label="мы в контакте">Вконтакте</a></li>
+        <li><a class="social-btn social-btn-fb" href="#" aria-label="мы на фейсбук">Фейсбук</a></li>
+        <li><a class="social-btn social-btn-in" href="#" aria-label="мы в инстаграм">Инстаграм</a></li>
       </ul>
       <p class="footer-copyright">Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
       <p class="footer-copyright">Разработано -<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </div>
   </footer>
+
+  <section class="visually-hidden support-popup">
+    <form class="support-form" method="post">
+      <h2 class="visually-hidden">Заполнить форму если у вас возникли вопросы</h2>
+      <button type="button" class="btn btn-close">Закрыть</button>
+      <p class="support-item"><label for="support-name">Ваше имя:</label><input type="text" name="name" id="support-name"
+          placeholder="Имя Фамилия" required></p>
+      <p class="support-item"><label for="support-email">Ваш <span lang="en">e-mail:</span></label><input type="email"
+          name="email" id="support-email" placeholder="email@example.com" required></p>
+      <p class="support-item"><label for="support-message"></label><textarea name="message" id="support-message" rows="5"
+          placeholder="В свободной форме" required></textarea></p>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </section>
+
   <script src="js/script.js"></script>
 </body>
 
