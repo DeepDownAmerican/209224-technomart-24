@@ -4,16 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="header-top">
-      <div class="header-logo"><a><img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт"></a></div>
+      <a class="header-logo" aria-label="логотип магазина техномарт">Техномарт</a>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <p><label for="search">Поиск:</label>
           <input type="search" id="search"></p>
@@ -49,52 +46,32 @@
 
   <main>
     <!-- ЗДЕСЬ БУДЕТ ИНФОРМАЦИЯ ПО ТОВАРАМ И ДОСТАВКЕ -->
-    <section class="services">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="services-items">
-        <li><button type="button" class="btn btn-services">Доставка</button></li>
-        <li><button type="button" class="btn btn-services">Гарантия</button></li>
-        <li><button type="button" class="btn btn-services">Кредит</button></li>
+    <section class="about-us">
+      <h2>Компания «Техномарт»</h2>
+      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта
+        и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        Техномарт работает со многими транспортными компаниями: </p>
+      <ul>
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
       </ul>
-      <section class="services-item">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-      </section>
+      <a href="#" class="btn btn-info">Подробнее о компании</a>
     </section>
-
-    <div class="index-columns">
-      <section class="about-us">
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта
-          и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями: </p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="btn btn-info">Подробнее о компании</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами,
-          заехав в наш офис:</p>
-        <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-        <a href="#" class="btn btn-letter">Заблудились? Напишите нам!</a>
-      </section>
-    </div>
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами,
+        заехав в наш офис:</p>
+      <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+      <a href="#" class="btn btn-letter">Заблудились? Напишите нам!</a>
+    </section>
   </main>
 
   <footer class="main-footer">
     <div class="footer-top">
       <div class="footer-contacts">
-        <div class="footer-logo"><img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт"></div>
+        <p class="footer-logo">Техномарт</p>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a href="#">+7 (812) 555-05-55</a></address>
       </div>
