@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="header-top">
-      <a href="index.html" class="header-logo">Техномарт</a>
+      <div class="header-logo"><a href="index.html"><img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт"></a></div>
       <form method="GET" action="https://echo.htmlacademy.ru">
         <p><label for="search">Поиск:</label>
           <input type="search" id="search"></p>
@@ -45,7 +48,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-catalog">
     <ul class="breadcrumbs">
       <li><a href="index.html">Домашняя страница</a></li>
       <li><a href="#">Каталог</a></li>
@@ -56,6 +59,9 @@
     <section class="filters">
       <h2>Фильтр:</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Цена:</legend>
+        </fieldset>
         <fieldset>
           <legend>Производители:</legend>
           <ul class="filter">
@@ -86,12 +92,24 @@
               <label for="net">Сетевые</label>
             </li>
           </ul>
-        </fieldset>
-        <button type="submit" class="btn filter-btn">Показать</button>
+          <button type="submit" class="btn filter-btn">Показать</button>
+        </fieldset> 
       </form>
     </section>
 
     <section class="catalog">
+      <section class="sorting">
+        <h2>Сортировка</h2>
+        <ul>
+          <li><a href="#" class="sorting-item">По цене</a></li>
+          <li><a href="#" class="sorting-item">По По типу</a></li>
+          <li><a href="#" class="sorting-item">По функционалу</a></li>
+        </ul>
+        <ul >
+          <li><a href="#" class="arrow arrow-up">По возрастанию</a></li>
+          <li><a href="#" class="arrow arrow-down">По убыванию</a></li>
+        </ul>
+      </section>
       <h2 class="visually-hidden">Список товров</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -188,7 +206,7 @@
   <footer class="main-footer">
     <div class="footer-top">
       <div class="footer-contacts">
-        <p class="footer-logo">Техномарт</p>
+        <div class="footer-logo"><img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт"></div>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="#">+7 (812) 555-05-55</a></address>
       </div>
