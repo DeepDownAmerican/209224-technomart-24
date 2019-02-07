@@ -3,7 +3,7 @@ body {
   font-family: "Cuprum", Tahoma, sans-serif;
   font-size: 17px;
   color: white;
-  background-color: black;
+  background-color: white;
 }
 
 a {
@@ -30,6 +30,11 @@ a {
   box-shadow: inset 0 -5px 0 0 #b52933;
 }
 
+.header-logo .logo {
+  width: 140px;
+  height: 24px;
+}
+
 .header-top {
   line-height: 18px;
   background-color: #293449;
@@ -51,10 +56,20 @@ a {
   text-align: center;
 }
 
-.header-top a:active {
+.header-top a:active(:nth-child(n+2)) {
   color: white;
   opacity: 0.5;
   background-color: #161d29;
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+  box-shadow: inset 0 -5px 0 0 #9a212a;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+  box-shadow: inset 0 -5px 0 0 #8e1e26;
 }
 
 .btn-order {
@@ -106,19 +121,23 @@ a {
   color: black;
 }
 
-.user-menu li:first-child {
+.user-menu .user-panel {
   width: 299px;
   height: 45px;
   background-color: white;
 }
 
-.user-menu li:nth-child(n+3) {
+.user-panel a {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-menu .user-link {
   color: #32425C;
   text-decoration: underline;
 }
 
-.user-menu li:nth-child(3):hover,
-.user-menu li:nth-child(4):hover {
+.user-menu .user-link:hover {
   color: #ee3643;
 }
 
@@ -126,7 +145,6 @@ a {
   color: black;
   opacity: 0.3;
 }
-
 
 .signin-link {
   width: 121px;
@@ -146,7 +164,8 @@ a {
   background-color: white;
 }
 
-.visually-hidden + p {
+.visually-hidden > p,
+.header-bottom > p {
   color: #ee3643;
   font-style: italic;
   line-height: 23px;
@@ -165,7 +184,7 @@ a {
   border: 3px solid white;
 }
 
-.adress {
+.address {
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
@@ -178,6 +197,170 @@ a {
   color: white;
   font-size: 17px;
   line-height: 17px;
+}
+
+/* ПРЕВЬЮ САЙТА */
+
+.preview {
+  background-color: white;
+}
+
+.open-catalog {
+  width: 195px;
+  height: 38px;
+}
+
+.open-catalog:hover {
+  background-color: #ca2c37:
+}
+
+.open-catalog:active {
+  background-color: #ba2732;
+}
+
+.preview-list {
+  list-style: none;
+}
+
+.preview-list li {
+  width: 300px;
+  height: 123px;
+}
+
+.preview-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.preview-list a {
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.preview-list a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.preview-list a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.preview-list .preview-material {
+  background-color: #ffbf47;
+}
+
+.preview-list .preview-tools {
+  background-color: #3bbce3;
+}
+
+.preview-list .preview-technics {
+  background-color: #dc91d8;
+}
+
+.preview-list .preview-sale {
+  background-color: #8ed78f;
+}
+
+.preview-list .preview-delivery {
+  background-color: #ffc047;
+}
+
+/* ПОПУЛЯРНЫЕ ТОВАРЫ */
+.goods-popular {
+background-color: white;
+}
+
+.goods-popular h2 {
+  width: 940px;
+  height: 89px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+}
+
+.goods-list {
+  list-style: none;
+}
+
+.goods-list h3 {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.goods-all,
+.manufacturer-all,
+.open-catalog {
+  width: 253px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ee3643;
+}
+
+.goods-item {
+  display: inline-block;
+  width: 220px;
+  height: 318px;
+  border: 1px solid #E5E5E5;
+}
+
+.goods-item:hover {
+box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.goods-item img {
+  width: 218px;
+  height: 170px;
+}
+
+/* ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ */
+.manufacturer-popular {
+  background-color: white;
+}
+
+.manufacturer-popular h2 {
+  width: 940px;
+  height: 89px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+}
+
+.manufacturer-list {
+  list-style: none;
+}
+
+.manufacturer-list li {
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+}
+
+.manufacturer-item:hover {
+  box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturer-item:active {
+  box-shadow: 0px 4px 10px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 /* СЕРВИСЫ */
@@ -334,9 +517,15 @@ a {
   text-align: center;
 }
 
+.sorting li,
+.sorting ul {
+  display: inline-block;
+}
+
 .sorting .sorting-item,
 .sorting .arrow {
   font-size: 13px;
+  line-height: 18px;
   color: #c5c5c5;
   border-bottom: 1px dotted #ee3643;
 }
@@ -384,6 +573,7 @@ a {
 
 .btn-buy:active {
   background-color: #518534;
+  box-shadow: none;
 }
 
 .btn-add-favourite {
@@ -435,8 +625,66 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   font-size: 17px;
   line-height: 18px;
   text-align: center;
+  vertical-align: middle;
   color: white;
   background-color: #EE3643;
+}
+
+.pagination-list {
+  list-style: none; 
+}
+
+.pagination-list a {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.pagination-item {
+  display: inline-block;
+  width: 38px;                                   
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+}
+
+.pagination-item:last-child {
+  width: 140px;
+  height: 38px;
+}
+
+.pagination-item:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-list li:focus {
+  color: white;
+  background-color: #ee3643;
+}
+
+/* О перфораторах */
+
+.about-perforators {
+  background-color: #f2f6f8;
+}
+
+.about-perforators h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-perforators p {
+  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
 }
 
 /* ПОДВАЛ САЙТА */
@@ -445,6 +693,11 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   height: 68px;
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 0 #b52933;
+}
+
+.footer-logo .logo {
+  width: 168px;
+  height: 30px;
 }
 
 .main-footer a {
@@ -457,7 +710,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   background-color: #32425c;
 }
 
-address {
+.footer-address {
   font-style: normal;
 }
 
