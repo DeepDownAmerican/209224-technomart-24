@@ -13,7 +13,7 @@
   <header class="page-header">
     <div class="header-top">
       <div class="header-logo"><a><img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт"></a></div>
-      <form method="GET" action="https://echo.htmlacademy.ru">
+      <form method="GET" action="https://echo.htmlacademy.ru" class="search">
         <p><label for="search">Поиск:</label>
           <input type="search" id="search"></p>
       </form>
@@ -68,17 +68,29 @@
         </ul>
       </article>
       <ul class="preview-list">
-        <li class="preview-item preview-material preview-item-new"><h3>Материал</h3><a href="#">На любой вкус</a></li>
-        <li class="preview-item preview-tools"><h3>Инструмент</h3><a href="#">На все случаи</a></li>
-        <li class="preview-item preview-technics"><h3>Техника</h3><a href="#">Для стройки</a></li>
-        <li class="preview-item preview-sale"><h3>Скидки 50%</h3><a href="#">На 350 товаров</a></li>
-        <li class="preview-item preview-delivery"><h3>Доставка</h3><a href="#">Бесплатно</a></li>
+        <li class="preview-item preview-material preview-item-new">
+          <h3>Материал</h3><a href="#">На любой вкус</a>
+        </li>
+        <li class="preview-item preview-tools">
+          <h3>Инструмент</h3><a href="#">На все случаи</a>
+        </li>
+        <li class="preview-item preview-technics">
+          <h3>Техника</h3><a href="#">Для стройки</a>
+        </li>
+        <li class="preview-item preview-sale">
+          <h3>Скидки 50%</h3><a href="#">На 350 товаров</a>
+        </li>
+        <li class="preview-item preview-delivery">
+          <h3>Доставка</h3><a href="#">Бесплатно</a>
+        </li>
       </ul>
     </section>
 
     <section class="goods-popular">
-      <h2>Популярные товары:</h2>
-      <a href="#" class="goods-all">Все популярные товары</a>
+      <div class="goods-popular-container">
+        <h2>Популярные товары:</h2>
+        <a href="#" class="goods-all">Все популярные товары</a>
+      </div>
       <ul class="goods-list">
         <li class="goods-item">
           <div class="hidden-menu">
@@ -123,8 +135,10 @@
     </section>
 
     <section class="manufacturer-popular">
-      <h2>Популярные производители:</h2>
-      <a href="#" class="manufacturer-all">Все производители</a>
+      <div class="manufacturer-popular-container">
+        <h2>Популярные производители:</h2>
+        <a href="#" class="manufacturer-all">Все производители</a>
+      </div>
       <ul class="manufacturer-list">
         <li class="manufacturer-item"><a href="#"><img src="img/bosch-logo.png" alt="производитель bosch"></a></li>
         <li class="manufacturer-item"><a href="#"><img src="img/makita-logo.png" alt="производитель makita"></a></li>
@@ -138,21 +152,27 @@
     </section>
 
     <section class="services">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="services-items">
-        <li><button type="button" class="btn btn-services">Доставка</button></li>
-        <li><button type="button" class="btn btn-services">Гарантия</button></li>
-        <li><button type="button" class="btn btn-services">Кредит</button></li>
-      </ul>
-      <section class="services-item">
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-      </section>
+      <div class="services-container">
+        <div class="services-preview">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div class="services-descriprion">
+          <ul class="services-items">
+            <li><button type="button" class="btn btn-services">Доставка</button></li>
+            <li><button type="button" class="btn btn-services">Гарантия</button></li>
+            <li><button type="button" class="btn btn-services">Кредит</button></li>
+          </ul>
+          <section class="services-item">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!</p>
+        </div>
+      </div>
+    </section>
     </section>
 
     <div class="index-columns">
@@ -214,7 +234,7 @@
     </div>
   </footer>
 
-  <section class="visually-hidden support-popup">
+  <section class="support-popup">
     <form class="support-form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="visually-hidden">Заполнить форму если у вас возникли вопросы</h2>
       <button type="button" class="btn btn-close">Закрыть</button>
@@ -234,7 +254,7 @@
     </form>
   </section>
 
-  <section class="visually-hidden map-popup">
+  <section class="map-popup">
     <h2 class="visually-hidden">Карта местоположения нашего офиса</h2>
     <img src="img/map.jpg" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   </section>
