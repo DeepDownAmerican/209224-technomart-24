@@ -20,8 +20,8 @@
           <p><label for="search">Поиск:</label>
             <input type="search" id="search"></p>
         </form>
-        <a href="#" class="favourite favourite-and-cart">Закладки</a>
-        <a href="#" class="cart favourite-and-cart">Корзина</a>
+        <a href="#" class="favourite favourite-and-cart">Закладки: 0</a>
+        <a href="#" class="cart favourite-and-cart">Корзина: 0</a>
         <a href="#" class="btn btn-order">Оформить заказ</a>
       </div>
     </div>
@@ -30,7 +30,7 @@
       <div class="container">
         <div class="header-bottom-container">
           <h1 class="visually-hidden">Техномарт - магазин строительных материалов</h1>
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
           <address>
             <a href="#" class="phone">+7 (812) 555-05-55</a>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -38,8 +38,8 @@
           <ul class="user-menu">
             <li class="user-panel"><a href="#">Равшан Джамшутович</a></li>
             <li><a href="#" class="exit">Выход</a></li>
-            <li><a href="#" class="user-link">Мои заказы</a></li>
-            <li><a href="#" class="user-link">Личный кабинет</a></li>
+            <li class="link-user"><a href="#" class="user-link">Мои заказы</a></li>
+            <li class="link-user"><a href="#" class="user-link">Личный кабинет</a></li>
           </ul>
         </div>
         <nav class="main-navigation">
@@ -60,7 +60,7 @@
   <main class="main-catalog">
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html">Домашняя страница</a></li>
+        <li><a href="index.html" class="home">Домашняя страница</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a>Перфораторы</a></li>
@@ -111,7 +111,7 @@
       <section class="catalog">
         <section class="sorting">
           <h2>Сортировка</h2>
-          <ul>
+          <ul class="type">
             <li><a href="#" class="sorting-item">По цене</a></li>
             <li><a href="#" class="sorting-item">По По типу</a></li>
             <li><a href="#" class="sorting-item">По функционалу</a></li>
@@ -223,12 +223,9 @@
     <section class="about-perforators">
       <div class="container">
       <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-        кирпиче, бетоне и камне.<br>
-        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-        шуруповерта и отбойного молотка. В<br>
-        ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-        дрель.</p>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и 
+          отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </section>
   </main>
@@ -268,12 +265,14 @@
           <li><a class="social-btn social-btn-fb" href="#" aria-label="мы на фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a class="social-btn social-btn-in" href="#" aria-label="мы в инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
+        <div class="copyright">
         <p class="footer-copyright">Обратная связь:<br>
           <a href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-copyright">Разработано -<br>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
+      </div>
       </div>
   </footer>
 
