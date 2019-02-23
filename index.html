@@ -17,8 +17,8 @@
           <a><img src="img/logo.svg" class="logo" width="111" height="18" aria-label="логотип магазина техномарт"></a>
         </div>
         <form method="GET" action="https://echo.htmlacademy.ru" class="search">
-          <p><label for="search">Поиск:</label>
-            <input type="search" id="search"></p>
+          <p><label for="search"></label>
+            <input type="search" id="search" placeholder="Поиск:"></p>
         </form>
         <a href="#" class="favourite favourite-and-cart">Закладки: 0</a>
         <a href="#" class="cart favourite-and-cart">Корзина: 0</a>
@@ -31,7 +31,7 @@
         <div class="header-bottom-container">
           <h1 class="visually-hidden">Техномарт - магазин строительных материалов</h1>
           <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-          <address>
+            <address>
             <a href="#" class="phone">+7 (812) 555-05-55</a>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
@@ -268,29 +268,30 @@
       </div>
   </footer>
 
-  <section class="support-popup">
-    <form class="support-form" method="post" action="https://echo.htmlacademy.ru">
+  <section class="visually-hidden feed-back-popup">
+    <form class="feed-back-form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="visually-hidden">Заполнить форму если у вас возникли вопросы</h2>
-      <button type="button" class="btn btn-close">Закрыть</button>
-      <p class="support-item">
-        <label for="support-name">Ваше имя:</label>
-        <input type="text" name="name" id="support-name" placeholder="Имя Фамилия" required>
+      <button type="button" class="btn-close">Закрыть</button>
+      <p class="feed-back-item feed-back-text">
+        <label for="feed-back-name">Ваше имя:</label><br>
+        <input type="text" name="name" id="feed-back-name" placeholder="Имя Фамилия" required>
       </p>
-      <p class="support-item">
-        <label for="support-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="support-email" placeholder="email@example.com" required>
+      <p class="feed-back-item feed-back-email">
+        <label for="feed-back-email">Ваш e-mail:</label><br>
+        <input type="email" name="email" id="feed-back-email" placeholder="email@example.com" required>
       </p>
-      <p class="support-item">
-        <label for="support-message">Текст письма:</label>
-        <textarea name="message" id="support-message" rows="5" placeholder="В свободной форме" required></textarea>
+      <p class="feed-back-item feed-back-message">
+        <label for="feed-back-message">Текст письма:</label><br>
+        <textarea name="message" id="feed-back-message" rows="5" placeholder="В свободной форме" required></textarea>
       </p>
-      <button type="submit" class="btn">Отправить</button>
+      <button type="submit" class="btn-red btn-feed-back">Отправить</button>
     </form>
   </section>
 
-  <section class="map-popup">
+  <section class="visually-hidden map-popup">
     <h2 class="visually-hidden">Карта местоположения нашего офиса</h2>
-    <img src="img/map.jpg" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <button type="button" class="btn-close">Закрыть</button>
+    <img src="img/map-popap.png" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   </section>
 
   <script src="js/script.js"></script>

@@ -16,9 +16,9 @@
         <div class="header-logo">
           <a><img src="img/logo.svg" class="logo" width="111" height="18" aria-label="логотип магазина техномарт"></a>
         </div>
-        <form method="GET" action="https://echo.htmlacademy.ru" class="search">
-          <p><label for="search">Поиск:</label>
-            <input type="search" id="search"></p>
+        <form method="GET" action="https://echo.htmlacademy.ru" class="search search-catalog">
+          <p><label for="search"></label>
+            <input type="search" id="search" placeholder="Поиск:"></p>
         </form>
         <a href="#" class="favourite favourite-and-cart favourite-catalog">Закладки: 0</a>
         <a href="#" class="cart favourite-and-cart cart-catalog">Корзина: 10</a>
@@ -228,7 +228,7 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item"><a>1</a></li>
+            <li class="pagination-item"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -296,10 +296,12 @@
   </footer>
 
   <section class="visually-hidden add-cart-popup">
-    <button type="button" class="btn btn-close">Закрыть</button>
     <h2 class="added-cart">Товар добавлен в корзину!</h2>
-    <a href="#" class="btn btn-follow-cart">Оформить заказ</a>
-    <button type="button" class="btn btn-continue">Продолжить покупки</button>
+    <button type="button" class="btn-close">Закрыть</button>
+    <div>
+      <a href="#" class="btn-red btn-follow-cart">Оформить заказ</a>
+      <button type="button" class="btn-continue">Продолжить покупки</button>
+    </div>
   </section>
 
   <script src="js/script.js"></script>
