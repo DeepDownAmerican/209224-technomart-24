@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <div class="header-top">
       <div class="container header-top-container">
         <div class="header-logo">
-          <a><img src="img/logo.svg" class="logo" width="111" height="18" aria-label="логотип магазина техномарт"></a>
+          <a><img src="img/logo.svg" class="logo" width="111" height="18" alt="логотип магазина техномарт"></a>
         </div>
         <form method="GET" action="https://echo.htmlacademy.ru" class="search search-catalog">
           <p><label for="search"></label>
@@ -228,7 +228,7 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">1</a></li>
+            <li class="pagination-item"><a class="active">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -254,7 +254,7 @@
       <div class="container main-footer-container">
         <div class="footer-contacts">
           <div class="footer-logo">
-            <img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт">
+            <img src="img/logo.svg" class="logo" width="111" height="18" alt="логотип магазина техномарт">
           </div>
           <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             <a href="#">+7 (812) 555-05-55</a></address>
@@ -293,9 +293,10 @@
           </p>
         </div>
       </div>
+    </div>
   </footer>
 
-  <section class="visually-hidden add-cart-popup">
+  <section class="popup add-cart-popup">
     <h2 class="added-cart">Товар добавлен в корзину!</h2>
     <button type="button" class="btn-close">Закрыть</button>
     <div>

@@ -1,13 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 1200px;
   font-family: "Cuprum", Tahoma, sans-serif;
   font-size: 17px;
   color: #ffffff;
   background-color: #ffffff;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 a {
@@ -288,7 +288,7 @@ input[type=radio].visually-hidden {
   padding: 49px 50px 0px 53px;
 }
 
-.header-bottom .user a{
+.header-bottom .user a {
   display: block;
   line-height: 21px;
   font-size: 21px; 
@@ -312,7 +312,7 @@ input[type=radio].visually-hidden {
   
   width: 20px;
   height: 17px;
-  
+
   background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -615,6 +615,7 @@ input[type=radio].visually-hidden {
 }
 
 .gallery {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 620px;
@@ -642,6 +643,7 @@ input[type=radio].visually-hidden {
 .gallety-list p {
   top: 62px;
   left: 26px;
+
   margin: 0;
   padding: 0;
 }
@@ -663,6 +665,7 @@ input[type=radio].visually-hidden {
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .gallety-list .btn-right {
@@ -682,11 +685,47 @@ input[type=radio].visually-hidden {
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
-.btn-back {
-  bottom: 150px;
-  left: 25px;
+/* Слайдер в превью*/
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 220px;
+  left: 295px;
+  z-index: 1;
+  
+  width: 30px;
+  height: 10px;
+}
+
+.slider-controls label {
+  position: relative;
+
+  width: 10px;
+  height: 10px;
+
+  font-size: 0;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.slider-controls .slider-item-2::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #ee3643;
+  border-radius: 50%;
+  z-index: 3;
 }
 
 .preview-list,
@@ -793,7 +832,6 @@ input[type=radio].visually-hidden {
   padding-top: 12px;
   padding-left: 27px;
 }
-
 
 .preview-list .preview-technics {
   background-image: url("../img/icon-3.svg");
@@ -1105,6 +1143,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   color: #ffffff;
   background-color: #32425c;
   border: 1px solid #293449;
+  cursor: pointer;
 }
 
 .btn-services:hover {
@@ -1390,6 +1429,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 /* FIXED нет точек на переключятелях */
 .range-controls .toggle {
   position: absolute;
+  box-sizing: content-box;
   top: 32px;
 
   width: 4px;
@@ -1463,6 +1503,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 
   border: 2px solid #c5c5c5;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-checkbox:checked + label::after {
@@ -1479,6 +1520,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: white;
+  cursor: pointer;
 }
 
 .filter-radio + label::before {
@@ -1491,7 +1533,8 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   height: 25px;
 
   border: 4px solid #c5c5c5;
-  border-radius: 50%
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .filter-radio:checked + label::after {
@@ -1506,6 +1549,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 
   background-color: #c5c5c5;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .filter-checkbox:disabled + label::before,
@@ -1672,7 +1716,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 
 .catalog-item .btn {
   position: relative;
-  font-family: "Cuprum" Tahoma, sans-serif;
+  font-family: "Cuprum", Tahoma, sans-serif;
   display: block;
   width: 135px;
   height: 38px;
@@ -1688,12 +1732,12 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .btn-buy {
-  font-family: "Cuprum" Tahoma, sans-serif;
   margin-bottom: 7px;
 
   color: #ffffff;
   background-color: #63a63e;
   box-shadow: inset 0 -3px 0 0 #367315;
+  cursor: pointer;
 }
 
 .hidden-menu .btn-buy::before {
@@ -1731,10 +1775,10 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .btn-add-favourite {
-  font-family: "Cuprum" Tahoma, sans-serif;
   background-color: #ffffff;
   color: #32425c;
   box-shadow: inset 0 0 0 3px #63a63e;
+  cursor: pointer;
 }
 
 .btn-add-favourite:hover {
@@ -1929,7 +1973,9 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   border: 1px solid #ee3643;
 }
 
-.pagination-list a:focus{
+.pagination-list .active,
+.pagination-list .active:hover,
+.pagination-list .active:active {
   color: #ffffff;
   background-color: #ee3643;
   border: none;
@@ -2155,15 +2201,27 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 
 /* POPUP ТОВАР ДОБАВЛЕН В КОРЗИНУ */
 
+.popup {
+  position: fixed;
+  display: none;
+}
+
+.popup-show {
+  display: block;
+}
+
 .add-cart-popup {
   display: flex;
   flex-direction: column;
-  position: relative;
+
+  top: 205px;
+  left: 50%;
 
   width: 620px;
   min-height: 282px;
   padding: 0;
   margin: 0 auto;
+  margin-left: -310px;
 
   color: #000000;
   background-color: #ffffff;
@@ -2187,6 +2245,7 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   border: none;
   background-color: transparent;
   background: transparent url("../img/close.svg") no-repeat 0 0;
+  cursor: pointer;
 }
 
 .added-cart {
@@ -2224,18 +2283,21 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* POPUP НУЖНА ПОМОЩЬ, НАПИШИТЕ НАМ! */
 
 .feed-back-popup {
-  position: relative;
+  top: 205px;
+  left: 50%;
 
   width: 620px;
   min-height: 430px;
   padding: 0;
   padding: 45px 80px 0 80px;
   margin: 0 auto;
+  margin-left: -310px;
 
   color: #000000;
   background-color: #ffffff;
@@ -2315,40 +2377,39 @@ box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
   min-height: 38px;
 
   border: none;
+  cursor: pointer;
 }
 
 /* POPAP КАРТА */
 
 .map-popup {
-  position: relative;
-  width: 960px;
-  min-height: 446px;
+  top: 205px;
+  left: 50%;
+  width: 940px;
+  height: 446px;
   padding: 0;
   margin: 0 auto;
+  margin-left: -471px;
 }
 
 .map-popup .btn-close {
   position: absolute;
-  top: 22px;
-  left: 915px;
+  top: 8px;
+  left: 911px;
   z-index: 10;
 }
 
 .map-popup img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
-  
 }
 
+.map-popup iframe {
+  position: absolute;
+  z-index: 2;
 
-
-
-
-
-
-
-
-
-
-
-
-
+  border: none;
+}

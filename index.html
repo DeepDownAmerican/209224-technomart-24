@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <div class="header-top">
       <div class="container header-top-container">
         <div class="header-logo">
-          <a><img src="img/logo.svg" class="logo" width="111" height="18" aria-label="логотип магазина техномарт"></a>
+          <a><img src="img/logo.svg" class="logo" width="111" height="18" alt="логотип магазина техномарт"></a>
         </div>
         <form method="GET" action="https://echo.htmlacademy.ru" class="search">
           <p><label for="search"></label>
@@ -31,7 +31,7 @@
         <div class="header-bottom-container">
           <h1 class="visually-hidden">Техномарт - магазин строительных материалов</h1>
           <p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
-            <address>
+          <address>
             <a href="#" class="phone">+7 (812) 555-05-55</a>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
@@ -54,7 +54,7 @@
       </div>
     </div>
   </header>
-  
+
   <main>
     <section class="preview">
       <h2 class="visually-hidden">Превью сайта</h2>
@@ -69,9 +69,15 @@
             </li>
           </ul>
           <article class="gallery">
+            <input class="visually-hidden" type="radio" id="slide-1" name="toggle">
+            <input class="visually-hidden" type="radio" id="slide-2" name="toggle" checked>
+            <div class="slider-controls">
+              <label class="slider-item slider-item-1" for="slide-1">Первый</label>
+              <label class="slider-item slider-item-2" for="slide-2">Второй</label>
+            </div>
             <ul class="gallety-list">
               <li class="gallery-item">
-                <img src="img/worker1.jpg" alt="рабочий с дрелью">
+                <img src="img/worker1.jpg" width="620" height="266" alt="рабочий с дрелью">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <button type="button" class="btn btn-left">Назад</button>
@@ -79,11 +85,11 @@
                 <a href="#" class="btn-red open-catalog">Открыть каталог</a>
               </li>
               <li class="gallery-item">
-                <img src="img/worker2.jpg" alt="рабочий с перфоратором">
+                <img src="img/worker2.jpg" width="620" height="266" alt="рабочий с перфоратором">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <button type="button" class="visually-hidden btn btn-left">Назад</button>
-                <button type="button" class="visually-hidden btn btn-right">Вперед</button>
+                <button type="button" class="btn btn-left">Назад</button>
+                <button type="button" class="btn btn-right">Вперед</button>
                 <a href="#" class="btn-red open-catalog">Открыть каталог</a>
               </li>
             </ul>
@@ -162,14 +168,14 @@
           <a href="#" class="btn-red manufacturer-all">Все производители</a>
         </div>
         <ul class="manufacturer-list">
-          <li class="manufacturer-item"><a href="#"><img src="img/bosch-logo.png" alt="производитель bosch"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/makita-logo.png" alt="производитель makita"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/dewalt-logo.png" alt="производитель dewalt"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/interskol-logo.png" alt="производитель интерскол"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/hitachi-logo.png" alt="производитель hitachi"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/lg-logo.png" alt="производитель lg"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/aeg-logo.png" alt="производитель aeg"></a></li>
-          <li class="manufacturer-item"><a href="#"><img src="img/metabo-logo.png" alt="производитель metabo"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/bosch-logo.png" width="126" height="37" alt="производитель bosch"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/makita-logo.png" width="123" height="40" alt="производитель makita"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/dewalt-logo.png" width="146" height="44" alt="производитель dewalt"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/interskol-logo.png" width="200" height="88" alt="производитель интерскол"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/hitachi-logo.png" width="169" height="31" alt="производитель hitachi"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/lg-logo.png" width="121" height="73" alt="производитель lg"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/aeg-logo.png" width="151" height="96" alt="производитель aeg"></a></li>
+          <li class="manufacturer-item"><a href="#"><img src="img/metabo-logo.png" width="204" height="69" alt="производитель metabo"></a></li>
         </ul>
       </div>
     </section>
@@ -201,7 +207,7 @@
     <div class="container index-columns-container">
       <section class="about-us">
         <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями: </p>
@@ -216,7 +222,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+        <a href="#"><img src="img/map.jpg" class="open-map" width="300" height="158" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
         <a href="#" class="btn-red btn-letter">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -227,7 +233,7 @@
       <div class="container main-footer-container">
         <div class="footer-contacts">
           <div class="footer-logo">
-            <img src="img/logo.svg" class="logo" aria-label="логотип магазина техномарт">
+            <img src="img/logo.svg" class="logo" width="111" height="18" alt="логотип магазина техномарт">
           </div>
           <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             <a href="#">+7 (812) 555-05-55</a></address>
@@ -264,11 +270,12 @@
           <p class="footer-copyright">Разработано -<br>
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
+        </div>
       </div>
-      </div>
+    </div>
   </footer>
 
-  <section class="visually-hidden feed-back-popup">
+  <section class="popup feed-back-popup">
     <form class="feed-back-form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="visually-hidden">Заполнить форму если у вас возникли вопросы</h2>
       <button type="button" class="btn-close">Закрыть</button>
@@ -288,10 +295,12 @@
     </form>
   </section>
 
-  <section class="visually-hidden map-popup">
+  <section class="popup map-popup">
     <h2 class="visually-hidden">Карта местоположения нашего офиса</h2>
-    <button type="button" class="btn-close">Закрыть</button>
-    <img src="img/map-popap.png" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    <button type="button" class="btn-close btn-close-map">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551342923103"
+      width="940" height="446" allowfullscreen></iframe>
+    <img src="img/map-popap.png" width="960" height="446" alt="Местоположение нашего офиса г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   </section>
 
   <script src="js/script.js"></script>
