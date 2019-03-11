@@ -27,7 +27,7 @@ mapclose.addEventListener("click", function (evt) {
   mappopup.classList.remove("popup-show");
 });
 
-
+// ТОВАР ДОБАВЛЕН В КОРЗИНУ
 var buylink = document.querySelector(".btn-buy");
 var buypopup = document.querySelector("add-cart-popup.");
 var buyclose = buypopup.querySelector(".btn-close");
