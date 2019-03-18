@@ -17,7 +17,7 @@
           <a><img src="img/logo.svg" class="logo" width="111" height="18" alt="логотип магазина техномарт"></a>
         </div>
         <form method="GET" action="https://echo.htmlacademy.ru" class="search">
-          <p><label for="search"></label>
+          <p><label for="search" aria-label="Поле поиска"></label>
             <input type="search" id="search" placeholder="Поиск:"></p>
         </form>
         <a href="#" class="favourite favourite-and-cart">Закладки: 0</a>
@@ -189,7 +189,7 @@
         </div>
         <div class="services-descriprion">
           <ul class="services-items">
-            <li><button type="button" class="btn btn-services">Доставка</button></li>
+            <li><button type="button" class="btn btn-services services-items-action">Доставка</button></li>
             <li><button type="button" class="btn btn-services btn-services1">Гарантия</button></li>
             <li><button type="button" class="btn btn-services btn-services1">Кредит</button></li>
           </ul>
@@ -278,9 +278,9 @@
       <div class="container main-footer-container">
         <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
         <ul class="footer-social">
-          <li><a class="social-btn social-btn-vk" href="#" aria-label="мы в контакте"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-btn social-btn-fb" href="#" aria-label="мы на фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-btn social-btn-in" href="#" aria-label="мы в инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-btn social-btn-vk" href="#" aria-label="мы в контакте"></a></li>
+          <li><a class="social-btn social-btn-fb" href="#" aria-label="мы на фейсбук"></a></li>
+          <li><a class="social-btn social-btn-in" href="#" aria-label="мы в инстаграм"></a></li>
         </ul>
         <div class="copyright">
           <p class="footer-copyright post">Обратная связь:
@@ -297,7 +297,7 @@
   <section class="popup feed-back-popup">
     <form class="feed-back-form" method="post" action="https://echo.htmlacademy.ru">
       <h2 class="visually-hidden">Заполнить форму если у вас возникли вопросы</h2>
-      <button type="button" class="btn-close">Закрыть</button>
+      <button type="button" class="btn-close btn-close-feedback">Закрыть</button>
       <p class="feed-back-item feed-back-text">
         <label for="feed-back-name">Ваше имя:</label>
         <input type="text" name="name" id="feed-back-name" placeholder="Имя Фамилия" required>

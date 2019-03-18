@@ -12,33 +12,33 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("popup-show");
 });
 
+var mapLink = document.querySelector(".open-map");
+var mapPopup = document.querySelector(".map-popup");
+var mapClose = mapPopup.querySelector(".btn-close-map");
 
-var maplink = document.querySelector(".open-map");
-var mappopup = document.querySelector(".map-popup");
-var mapclose = mappopup.querySelector(".btn-close-map");
-
-maplink.addEventListener("click", function (evt) {
+mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.add("popup-show");
+  mapPopup.classList.add("popup-show");
 });
 
-mapclose.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.remove("popup-show");
+  mapPopup.classList.remove("popup-show");
 });
 
-// ТОВАР ДОБАВЛЕН В КОРЗИНУ
-var buylink = document.querySelector(".btn-buy");
-var buypopup = document.querySelector("add-cart-popup.");
-var buyclose = buypopup.querySelector(".btn-close");
+var buyLink = document.querySelectorAll(".btn-buy");
+var buyPopup = document.querySelector(".add-cart-show");
+var buyClose = document.querySelector(".btn-close-add");
 
-buylink.addEventListener("click", function (evt) {
+buyLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  buypopup.classList.add("popup-show");
+  buyPopup.classList.add("popup-show");
 });
 
-buyclose.addEventListener("click", function (evt) {
+
+buyClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  buypopup.classList.remove("popup-show");
+  buyPopup.classList.remove("popup-show");
 });
+
 
