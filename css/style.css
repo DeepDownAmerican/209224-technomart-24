@@ -323,10 +323,14 @@ input[type=radio].visually-hidden {
   min-height: 158px;
 }
 
-.header-bottom-container > p {
-  
+.header-bottom-container > p { 
   margin: 0;
   padding: 49px 50px 0px 53px;
+}
+
+/* IE */
+_:-ms-fullscreen, :root .index-header-bottom-container > p  {
+  margin-left: -20px;
 }
 
 .header-bottom .user a {
@@ -1330,6 +1334,10 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 .guarantee,
 .credit {
   display: none;
+}
+
+.services-show {
+  display: block;
 }
 
 /* ОПИСАНИЕ И КОНТАКТЫ */
