@@ -503,12 +503,10 @@ _:-ms-fullscreen, :root .index-header-bottom-container > p  {
   padding-right: 52px;
 }
 
-/* Для IE */
 _:-ms-fullscreen, :root .main-menu-list li:nth-child(7) a {
   padding-right: 50px;
 } 
 
-/* Для Edge */
 @supports (-ms-ime-align: auto) {
   .main-menu-list li:nth-child(7) a {
   padding-right: 50px;
