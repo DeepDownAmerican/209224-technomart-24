@@ -474,6 +474,11 @@ _:-ms-fullscreen, :root .index-header-bottom-container > p  {
   background-position: 0 0;
 }
 
+.main-menu-list li a {
+  padding-left: 34px;
+  padding-right: 33.5px;
+}
+
 .main-menu-list li:nth-child(1) a {
   padding-left: 52px;
   padding-right: 37px;
@@ -700,8 +705,26 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
   width: 620px;
 }
 
-.gallety-list img {
+.gallety-list {
   position: relative;
+}
+
+.gallery-item-one {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/worker1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #000000;
+}
+
+.gallery-item-two {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/worker2.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #000000;
 }
 
 .gallety-list * {
@@ -848,6 +871,8 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 }
 
 .preview-list h3 {
+  width: 165px;
+  min-height: 30px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -886,6 +911,7 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 
 .preview-item {
   position: relative;
+  min-height: 123px;
 }
 
 .preview-list .preview-material {
@@ -1046,7 +1072,7 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 }
 
 .open-catalog {
-  bottom: 27px;
+  bottom: 22px;
   left: 25px;
 
   width: 195px;
@@ -1203,6 +1229,9 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 }
 
 .services-container {
+  width: 960px;
+  padding: 0 0.01px 0 10px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1280,20 +1309,35 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
   border: 1px solid #ffffff;
 }
 
-.services-description .delivery {
-  width: 280px;
+.delivery p {
+  width: 275px;
 }
 
-.services-description .guarantee {
+.guarantee p {
   width: 378px;
 }
 
-.services-description .credit {
+.credit p {
   width: 285px;
+  margin-bottom: 28px;
 }
 
-.credit p {
-  margin-bottom: 24px;
+.services-description .delivery {
+  width: 620px; 
+  min-height: 261px;
+  background: url("../img/icon-car.png") 150px 25px no-repeat;
+}
+
+.services-description .guarantee {
+  width: 630px; 
+  min-height: 283px;
+  background: url("../img/icon-guarantee.png") 238px 3px no-repeat;
+}
+
+.services-description .credit {
+  width: 630px; 
+  min-height: 285px;
+  background: url("../img/icon-credit.png") 165px 2px no-repeat;
 }
 
 .credit .btn-credit {
@@ -1309,24 +1353,6 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 25px;
-}
-
-.picture-delivery {
-  position: absolute;
-  top: 25px;
-  left: 470px;
-}
-
-.picture-guarantee {
-  position: absolute;
-  top: 2px;
-  left: 559px;
-}
-
-.picture-credit {
-  position: absolute;
-  top: 0;
-  left: 483px;
 }
 
 .guarantee,
@@ -1923,10 +1949,6 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
   padding-bottom: 0;
 }
 
-.catalog-item {
-  position: relative;
-}
-
 .catalog-item .btn {
   position: relative;
   font-family: "Cuprum", Tahoma, sans-serif;
@@ -2055,8 +2077,6 @@ _:-ms-fullscreen, :root .user-menu li:nth-child(n+3) {
 .catalog-item * {
   margin: 0;
 }
-
-
 
 .catalog-item:hover {
   -webkit-box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
