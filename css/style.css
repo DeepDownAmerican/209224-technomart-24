@@ -492,7 +492,7 @@ _:-ms-fullscreen, :root .index-header-bottom-container > p  {
 }
 .main-menu-list li:nth-child(4) a {
   padding-left: 25px;
-  padding-right: 26px;;
+  padding-right: 26px;
 }
 .main-menu-list li:nth-child(5) a {
   padding-left: 31px;
@@ -524,9 +524,11 @@ _:-ms-fullscreen, :root .main-menu-list li:nth-child(7) a {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 0;
+
   margin: 0;
+  padding: 0;
   padding-top: 46px;
+
   list-style: none;
 }
 
@@ -560,6 +562,7 @@ _:-ms-fullscreen, :root .main-menu-list li:nth-child(7) a {
 
 .user-menu {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,8 +589,13 @@ _:-ms-fullscreen, :root .main-menu-list li:nth-child(7) a {
 }
 
 .user-menu .user-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 300px;
   height: 45px;
 
@@ -718,10 +726,17 @@ _:-ms-fullscreen, :root .private {
 }
 
 .gallery-item-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
   width: 620px;
   height: 266px;
+
   background-image: url("../img/worker1.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -729,10 +744,17 @@ _:-ms-fullscreen, :root .private {
 }
 
 .gallery-item-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
   width: 620px;
   height: 266px;
+
   background-image: url("../img/worker2.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -888,27 +910,33 @@ _:-ms-fullscreen, :root .private {
 .preview-list h3 {
   width: 165px;
   min-height: 30px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #ffffff;
+
   padding: 0;
   margin-top: 20px;
   margin-left: 23px;
   margin-bottom: 12px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .preview-list a {
   display: block;
+
   width: 135px;
   height: 38px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  margin-left: 25px;
   
+  line-height: 18px;
+  margin-left: 25px;
+
+  font-size: 14px;
+  color: #ffffff;
+
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
+
   text-transform: uppercase;
 }
 
@@ -930,11 +958,12 @@ _:-ms-fullscreen, :root .private {
 }
 
 .preview-list .preview-material {
+  margin-right: 20px;
+
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px center;
-  background-color: #ffbf47;
-  margin-right: 20px;
+  background-color: #ffbf47; 
 }
 .preview-material a {
   padding-top: 12px;
@@ -1014,20 +1043,24 @@ _:-ms-fullscreen, :root .private {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 940px;
   min-height: 89px;
-  background-color: #f9f5f0;
   margin-bottom: 20px;
+
+  background-color: #f9f5f0;
 }
 
 .goods-popular h2 {
-  font-size: 30px;
-  line-height: 30px;
   margin: 0;
   margin-left: 28px;
   padding-top: 30px;
-  color: #32425c;
+
+  font-size: 30px;
+  line-height: 30px;
   font-weight: normal;
+
+  color: #32425c;
   text-transform: uppercase;
 }
 
@@ -1038,9 +1071,11 @@ _:-ms-fullscreen, :root .private {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  list-style: none;
+  
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 
 .goods-list h3 {
@@ -1053,15 +1088,19 @@ _:-ms-fullscreen, :root .private {
 
 .btn-red {
   display: inline-block;
+  vertical-align: top;
+
   height: 38px;
+  padding: 10px 0;
+
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 0;
-  vertical-align: top;
-  text-transform: uppercase;
+  
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 2px;
+
+  text-transform: uppercase;
 }
 
 .btn-red:hover {
@@ -1073,16 +1112,16 @@ _:-ms-fullscreen, :root .private {
 }
 
 .goods-all {
+  min-width: 253px;
   margin-top: 25px;
   margin-right: 24px;
-  min-width: 253px;
   padding-left: 55px;
 }
 
 .manufacturer-all {
+  min-width: 253px;
   margin-top: 25px;
   margin-right: 24px;
-  min-width: 253px;
   padding-left: 70px;
 }
 
@@ -1106,6 +1145,7 @@ _:-ms-fullscreen, :root .private {
 .goods-item {
   width: 220px;
   height: 318px;
+
   border: 1px solid #E5E5E5;
 }
 
@@ -1134,13 +1174,15 @@ _:-ms-fullscreen, :root .private {
 }
 
 .manufacturer-popular h2 {
-  font-size: 30px;
-  line-height: 30px;
   margin: 0;
   margin-left: 28px;
   padding-top: 30px;
+
+  font-size: 30px;
+  line-height: 30px;
   color: #32425c;
   font-weight: normal;
+
   text-transform: uppercase;
 }
 
@@ -1153,10 +1195,12 @@ _:-ms-fullscreen, :root .private {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style: none;
+ 
   padding: 0;
   margin: 0;
   margin-top: -20px;
+
+  list-style: none;
 }
 
 .manufacturer-list li {
@@ -1164,6 +1208,7 @@ _:-ms-fullscreen, :root .private {
   height: 145px;
   margin-top: 20px;
   text-align: center;
+
   border: 1px solid #eaeaea;
   background-color: #ffffff;
 }
@@ -1243,9 +1288,6 @@ _:-ms-fullscreen, :root .private {
 }
 
 .services-container {
-  width: 960px;
-  padding: 0 0.01px 0 10px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1256,6 +1298,10 @@ _:-ms-fullscreen, :root .private {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+
+  width: 960px;
+  padding: 0 0.01px 0 10px;
+  margin: 0 auto;
 }
 
 .services-preview {
@@ -1271,6 +1317,7 @@ _:-ms-fullscreen, :root .private {
 
 .services-description {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1278,9 +1325,11 @@ _:-ms-fullscreen, :root .private {
 
 .services-items {
   position: relative;
+
   padding: 0;
   margin: 0;
   margin-right: 80px;
+
   list-style: none;
 }
 
@@ -1289,13 +1338,14 @@ _:-ms-fullscreen, :root .private {
   position: absolute;
   top: -45px;
   right: 0;
+
   width: 10px;
   height: 279px;
+
   background: url("../img/services-shadow.png") no-repeat 0 0;
 }
 
 .btn-services {
-  
   width: 240px;
   height: 63px;
   padding-left: 22px;
@@ -1304,10 +1354,11 @@ _:-ms-fullscreen, :root .private {
   line-height: 30px;
   font-weight: bold;
   text-align: left;
-
   color: #ffffff;
+  
   background-color: #32425c;
   border: 1px solid #293449;
+
   cursor: pointer;
 }
 
@@ -1319,6 +1370,7 @@ _:-ms-fullscreen, :root .private {
 .services-items-action:hover,
 .services-items-action:active {
   color: #32425c;
+
   background-color: #ffffff;
   border: 1px solid #ffffff;
 }
@@ -1339,18 +1391,21 @@ _:-ms-fullscreen, :root .private {
 .services-description .delivery {
   width: 620px; 
   min-height: 261px;
+
   background: url("../img/icon-car.png") 150px 25px no-repeat;
 }
 
 .services-description .guarantee {
   width: 630px; 
   min-height: 283px;
+
   background: url("../img/icon-guarantee.png") 238px 3px no-repeat;
 }
 
 .services-description .credit {
   width: 630px; 
   min-height: 285px;
+
   background: url("../img/icon-credit.png") 165px 2px no-repeat;
 }
 
@@ -1360,13 +1415,14 @@ _:-ms-fullscreen, :root .private {
 }
 
 .services h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 25px;
 }
 
 .guarantee,
@@ -1386,6 +1442,7 @@ _:-ms-fullscreen, :root .private {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   min-height: 536px;
   padding-top: 77px;
   padding-bottom: 86px;
@@ -1401,12 +1458,13 @@ _:-ms-fullscreen, :root .private {
 }
 
 .index-columns-container p {
+  margin-top: 0;
+  padding: 0;
+
   font-family: "PT Sans", Tahoma, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  margin-top: 0;
-  padding: 0;
 }
 
 .about-us p {
@@ -1425,6 +1483,7 @@ _:-ms-fullscreen, :root .private {
 
 .about-us li {
   position: relative;
+
   margin-bottom: 17px;
 }
 
@@ -1446,11 +1505,11 @@ _:-ms-fullscreen, :root .private {
 }
 
 .index-columns-container ul {
-  list-style: none;
   font-size: 18px;
   line-height: 19px;
-
   color: #000000;
+
+  list-style: none;
 }
 
 .about-us {
@@ -2068,6 +2127,7 @@ _:-ms-fullscreen, :root .private {
 
 .catalog-item {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2075,11 +2135,15 @@ _:-ms-fullscreen, :root .private {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+
   width: 220px;
   min-height: 318px;
   margin-left: 20px;
   margin-bottom: 20px;
+
   border: 1px solid #E5E5E5;
   text-align: center;
 }
@@ -2160,6 +2224,7 @@ _:-ms-fullscreen, :root .private {
   position: absolute;
   top: 0;
   right: -20px;
+  
   border: 20px solid #EE3643;
   border-top: 19px solid transparent;
   border-bottom: 19px solid transparent;
@@ -2194,11 +2259,12 @@ _:-ms-fullscreen, :root .price::after {
   justify-content: flex-start;
 
   min-width: 300px;
-  text-align: center;
   padding: 0;
   margin: 0;
   padding-top: 26px;
   padding-bottom: 60px;
+
+  text-align: center;
 
   list-style: none;
 }
@@ -2303,11 +2369,13 @@ _:-ms-fullscreen, :root .footer-navigation {
 .footer-logo {
   width: 220px;
   height: 63px;
+  margin-bottom: 32px;
   padding: 18px 41px 25px 41px;
+
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
   box-shadow: 0 5px 0 0 #b52933;
-  margin-bottom: 32px;
+ 
 }
 
 .footer-logo .logo {
@@ -2383,6 +2451,7 @@ _:-ms-fullscreen, :root .footer-navigation {
   min-height: 107px;
   font-size: 16px;
   line-height: 18px;
+
   background-color: #293449;
 }
 
@@ -2390,6 +2459,8 @@ _:-ms-fullscreen, :root .footer-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 107px;
 }
@@ -2406,6 +2477,7 @@ _:-ms-fullscreen, :root .footer-navigation {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 320px;
   padding-left: 15px;
   padding-right: 15px;
@@ -2417,23 +2489,28 @@ _:-ms-fullscreen, :root .footer-navigation {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
   width: 160px;
   padding: 0;
   margin-left: 15px;
   margin-right: 80px;
+
   list-style: none;
 }
 
 .social-btn {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   width: 41px;
   height: 41px;
-  border-radius: 50%;
-  background-color: #212a3a;
   margin-right: 5px;
+
+  border-radius: 50%;
+  background-color: #212a3a; 
 }
 
 .social-btn-vk::after {
@@ -2512,8 +2589,9 @@ _:-ms-fullscreen, :root .footer-navigation {
 
 .popup {
   position: fixed;
+
   display: none;
-  z-index: 10;
+  z-index: 20;
 }
 
 .popup-show {
@@ -2544,6 +2622,7 @@ _:-ms-fullscreen, :root .footer-navigation {
   
   background: #ffffff url("../img/add-popup-check.svg") no-repeat 80px 46px;
   border-top: 7px solid #ee3643;
+  -webkit-box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75), inset 0 -112px 0 0 #f1f1f1;
   box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75), inset 0 -112px 0 0 #f1f1f1;
 }
 
@@ -2573,7 +2652,11 @@ _:-ms-fullscreen, :root .footer-navigation {
 }
 
 .add-cart-popup div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 41px;
   padding-left: 80px;
@@ -2619,6 +2702,7 @@ _:-ms-fullscreen, :root .footer-navigation {
   color: #000000;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
+  -webkit-box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75), inset 0 -112px  0 0 #f4f4f4;
   box-shadow: 0px 20px 40px rgba(41, 52, 73, 0.75), inset 0 -112px  0 0 #f4f4f4;
 }
 
