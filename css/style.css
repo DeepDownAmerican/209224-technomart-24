@@ -663,8 +663,9 @@ _:-ms-fullscreen, :root .main-menu-list li:nth-child(7) a {
 }
 
 .private {
+  width: 150px;
   margin-top: -9px;
-  margin-right: 72px;
+  margin-right: 25px;
 }
 
 _:-ms-fullscreen, :root .user-menu li:nth-child(n+2) {
